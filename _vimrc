@@ -15,3 +15,5 @@ filetype plugin on
 " ignore case in search
 set ic
 
+" highlight tabs and trailing spaces
+set list listchars=tab:→\ ,trail:·
