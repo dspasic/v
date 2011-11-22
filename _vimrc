@@ -31,6 +31,9 @@ set list listchars=tab:→\ ,trail:·
 " :autocmd FileType php noremap <C-L> :!/usr/local/bin/php -l %<CR>
 
 if has('gui_running')
-    set guifont=FreeMono\ 10
+    set guifont=FreeMono\ 11
+    colorscheme xoria256
+    " remove the Toolbar
+    set go-=T
 endif
 
