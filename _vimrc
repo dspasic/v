@@ -35,5 +35,7 @@ if has('gui_running')
     colorscheme xoria256
     " remove the Toolbar
     set go-=T
+    " disable the ugly visual bell
+    set visualbell t_vb=
 endif
 
