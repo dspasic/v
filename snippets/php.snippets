@@ -86,16 +86,14 @@ snippet doc_fp
 	 * ${1:undocumented function}
 	 *
 	 * @return ${2:void}
-	 * @author ${3:`g:snips_author`}
-	 **/${4}
+	 */${4}
 # Function signature
 snippet doc_s
 	/**
 	 * ${4:undocumented function}
 	 *
 	 * @return ${5:void}
-	 * @author ${6:`g:snips_author`}
-	 **/
+	 */
 	${1}function ${2}(${3});${7}
 # Function
 snippet doc_f
@@ -103,8 +101,7 @@ snippet doc_f
 	 * ${4:undocumented function}
 	 *
 	 * @return ${5:void}
-	 * @author ${6:`g:snips_author`}
-	 **/
+	 */
 	${1}function ${2}(${3})
 	{${7}
 	}
@@ -195,7 +192,7 @@ snippet else
 		${1:// code...}
 	}
 snippet elseif
-	else if (${1:/* condition */}) {
+	elseif (${1:/* condition */}) {
 		${2:// code...}
 	}
 # Tertiary conditional
