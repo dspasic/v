@@ -13,6 +13,9 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 
+"" set the right margin
+set colorcolumn=120
+
 " show partial command
 set showcmd
 
