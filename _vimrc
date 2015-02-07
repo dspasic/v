@@ -21,6 +21,8 @@ Bundle 'scrooloose/syntastic'
 Bundle 'bling/vim-airline'
 " Solarized color scheme
 Bundle "altercation/vim-colors-solarized"
+" search and display information from arbitrary sources
+Bundle "Shougo/unite.vim"
 
 " Required after Vundle did its job.
 filetype plugin indent on     " required!
