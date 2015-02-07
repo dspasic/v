@@ -2,43 +2,92 @@
 
 " No mouse please
 set nocompatible
+filetype off " required!
+
+set rtp+=/usr/share/vim/vim73/addon
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" let Vundle manage Vundle
+" required!
+Bundle 'gmarik/vundle'
+
+" Fancy snippet machine
+Bundle 'SirVer/ultisnips'
+" Syntaxt checks
+Bundle 'scrooloose/syntastic'
+" Nice title bar
+Bundle 'bling/vim-airline'
+" Solarized color scheme
+Bundle "altercation/vim-colors-solarized"
+
+" Required after Vundle did its job.
+filetype plugin indent on     " required!
+
+" Automatically reload .vimrc if it is change
+if has("autocmd")
+    autocmd bufwritepost .vimrc source $MYVIMRC
+endif
+
+"""""""""""""""""""
+" Standard settings
+"""""""""""""""""""
 
 syntax on
 
 set smartindent
 set autoindent
 set smarttab
+set number
 
 set tabstop=4
 set shiftwidth=4
+set softtabstop=4
 set expandtab
+set encoding=utf-8
 
 "" set the right margin
 set colorcolumn=120
 
-" show partial command
-set showcmd
-
-set ruler
-
-filetype plugin on
-
 " ignore case in search
 set ic
 
+" Deactivate visual bell
+set visualbell
+set t_vb=
+set ttyfast
+
+filetype plugin on
+filetype indent on
+
+" Deactivate original mode indicator, powerline does that
+set noshowmode
+set ruler
+set laststatus=2
+
+" show partial command
+set showcmd
+
+" Twig template highlighting
+autocmd BufRead *.twig set filetype=twig
+autocmd BufRead *.html.twig set filetype=htmltwig
+
 " highlight tabs and trailing spaces
 set list listchars=tab:→\ ,trail:·
+
+" Enable customized non-visible character display
+" http://vimcasts.org/episodes/show-invisibles/
+nnoremap <leader>l :set list!<CR>
 
 " PHP part
 " PHP parser check (CTRL-L)
 " :autocmd FileType php noremap <C-L> :!/usr/local/bin/php -l %<CR>
 
 if has('gui_running')
-    set guifont=FreeMono\ 11
-    colorscheme xoria256
+    colorscheme solarized
+    " set guifont=FreeMono\ 11
     " remove the Toolbar
     set go-=T
-    " disable the ugly visual bell
-    set visualbell t_vb=
 endif
 
