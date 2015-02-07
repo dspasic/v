@@ -52,6 +52,8 @@ set colorcolumn=120
 
 " ignore case in search
 set ic
+" If upper case letters occur, be case insensitive
+set smartcase
 
 " Deactivate visual bell
 set visualbell
