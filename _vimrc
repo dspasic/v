@@ -23,6 +23,10 @@ Bundle 'bling/vim-airline'
 Bundle "altercation/vim-colors-solarized"
 " search and display information from arbitrary sources
 Bundle "Shougo/unite.vim"
+" Asynchronous execution plugin for Vim
+Bundle "Shougo/vimproc.vim"
+" Semantical autocomplete for PHP
+Bundle 'm2mdas/phpcomplete-extended'
 
 " Required after Vundle did its job.
 filetype plugin indent on     " required!
@@ -90,3 +94,6 @@ if has('gui_running')
     " remove the Toolbar
     set go-=T
 endif
+
+let g:phpcomplete_index_composer_command='composer'
+autocmd  FileType  php setlocal omnifunc=phpcomplete_extended#CompletePHP
