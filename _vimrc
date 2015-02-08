@@ -84,14 +84,9 @@ set list listchars=tab:→\ ,trail:·
 " http://vimcasts.org/episodes/show-invisibles/
 nnoremap <leader>l :set list!<CR>
 
-" PHP part
-" PHP parser check (CTRL-L)
-" :autocmd FileType php noremap <C-L> :!/usr/local/bin/php -l %<CR>
-
 if has('gui_running')
     colorscheme solarized
     " set guifont=FreeMono\ 11
     " remove the Toolbar
     set go-=T
 endif
-
