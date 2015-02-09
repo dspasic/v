@@ -27,6 +27,8 @@ Bundle "Shougo/unite.vim"
 Bundle "Shougo/vimproc.vim"
 " Semantical autocomplete for PHP
 Bundle 'm2mdas/phpcomplete-extended'
+"A Vim plugin which shows a git diff in the 'gutter'
+Bundle 'airblade/vim-gitgutter'
 
 " Required after Vundle did its job.
 filetype plugin indent on     " required!
@@ -89,9 +91,13 @@ set list listchars=tab:→\ ,trail:·
 nnoremap <leader>l :set list!<CR>
 
 if has('gui_running')
+    set background=light
     colorscheme solarized
     " set guifont=FreeMono\ 11
     " remove the Toolbar
+    if has("gui_macvim")
+        set guifont=Menlo\ Regular:h12
+    endif
     set go-=T
 endif
 
