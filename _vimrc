@@ -21,7 +21,7 @@ Bundle 'scrooloose/syntastic'
 Bundle 'bling/vim-airline'
 " Solarized color scheme
 Bundle "altercation/vim-colors-solarized"
-" search and display information from arbitrary sources
+    " search and display information from arbitrary sources
 Bundle "Shougo/unite.vim"
 " Asynchronous execution plugin for Vim
 Bundle "Shougo/vimproc.vim"
@@ -29,6 +29,8 @@ Bundle "Shougo/vimproc.vim"
 Bundle 'm2mdas/phpcomplete-extended'
 "A Vim plugin which shows a git diff in the 'gutter'
 Bundle 'airblade/vim-gitgutter'
+" Support for Rust
+Bundle 'wting/rust.vim'
 
 " Required after Vundle did its job.
 filetype plugin indent on     " required!
