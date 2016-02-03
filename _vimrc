@@ -30,7 +30,7 @@ Bundle 'm2mdas/phpcomplete-extended'
 "A Vim plugin which shows a git diff in the 'gutter'
 Bundle 'airblade/vim-gitgutter'
 " Support for Rust
-Bundle 'wting/rust.vim'
+Bundle 'rust-lang/rust.vim'
 
 " Required after Vundle did its job.
 filetype plugin indent on     " required!
