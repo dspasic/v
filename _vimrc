@@ -31,6 +31,8 @@ Bundle 'm2mdas/phpcomplete-extended'
 Bundle 'airblade/vim-gitgutter'
 " Support for Rust
 Bundle 'rust-lang/rust.vim'
+" API Blueprint support
+Plugin 'kylef/apiblueprint.vim'
 
 " Required after Vundle did its job.
 filetype plugin indent on     " required!
