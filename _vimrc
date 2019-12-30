@@ -15,24 +15,12 @@ Bundle 'gmarik/vundle'
 
 " Fancy snippet machine
 Bundle 'SirVer/ultisnips'
-" Syntaxt checks
-Bundle 'scrooloose/syntastic'
 " Nice title bar
 Bundle 'bling/vim-airline'
-" Solarized color scheme
-Bundle "altercation/vim-colors-solarized"
-    " search and display information from arbitrary sources
+" search and display information from arbitrary sources
 Bundle "Shougo/unite.vim"
-" Asynchronous execution plugin for Vim
-Bundle "Shougo/vimproc.vim"
-" Semantical autocomplete for PHP
-Bundle 'm2mdas/phpcomplete-extended'
 "A Vim plugin which shows a git diff in the 'gutter'
 Bundle 'airblade/vim-gitgutter'
-" Support for Rust
-Bundle 'rust-lang/rust.vim'
-" API Blueprint support
-Plugin 'kylef/apiblueprint.vim'
 
 " Required after Vundle did its job.
 filetype plugin indent on     " required!
