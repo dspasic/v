@@ -38,3 +38,6 @@ set list listchars=tab:→\ ,trail:·
 " Enable customized non-visible character display
 " http://vimcasts.org/episodes/show-invisibles/
 nnoremap <leader>l :set list!<CR>
+
+" set the colorscheme
+colorscheme PaperColor
