@@ -32,6 +32,8 @@ require("lazy").setup({
     { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
     { "nvim-treesitter/playground" },
     { "ThePrimeagen/harpoon", branch = "harpoon2", dependencies = {"nvim-lua/plenary.nvim"} },
+    { "mbbill/undotree" },
+    { "tpope/vim-fugitive" },
 
     -- import your plugins
     -- { import = "plugins" },
