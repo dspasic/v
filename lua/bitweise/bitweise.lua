@@ -29,7 +29,7 @@ vim.opt.ic = true
 vim.opt.smartcase = true
 
 -- Deactivate visual bell
-vim.opt.visualbell = true
+vim.opt.visualbell = false
 vim.cmd [[set t_vb=]]
 vim.opt.ttyfast = true
 
@@ -42,6 +42,3 @@ require("bitweise/remap")
 
 -- The the plugin manager Lazy
 require("bitweise/lazy")
-
--- set the colorscheme after the scheme was installed over lazy
-vim.cmd.colorscheme("catppuccin")

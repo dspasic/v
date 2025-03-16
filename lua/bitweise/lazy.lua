@@ -28,7 +28,11 @@ vim.g.maplocalleader = "\\"
 require("lazy").setup({
   spec = {
     { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
-    { "nvim-telescope/telescope.nvim", branch = "0.1.x", requires = {{"nvim-lua/pleneray.nvim"}} },
+    { "nvim-telescope/telescope.nvim", branch = "0.1.x", dependencies = {"nvim-lua/plenary.nvim"} },
+    { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
+    { "nvim-treesitter/playground" },
+    { "ThePrimeagen/harpoon", branch = "harpoon2", dependencies = {"nvim-lua/plenary.nvim"} },
+
     -- import your plugins
     -- { import = "plugins" },
   },
