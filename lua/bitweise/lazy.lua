@@ -28,6 +28,7 @@ vim.g.maplocalleader = "\\"
 require("lazy").setup({
   spec = {
     { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+    { "nvim-telescope/telescope.nvim", branch = "0.1.x", requires = {{"nvim-lua/pleneray.nvim"}} },
     -- import your plugins
     -- { import = "plugins" },
   },
