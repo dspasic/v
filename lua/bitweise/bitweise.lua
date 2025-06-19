@@ -5,8 +5,8 @@
 -- Set <space> as the leader key
 -- See `:help mapleader`
 --  NOTE: Must happen before plugins are loaded (otherwise wrong leader will be used)
-vim.g.mapleader = ' '
-vim.g.maplocalleader = ' '
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
 
 -- Set to true if you have a Nerd Font installed and selected in the terminal
 vim.g.have_nerd_font = false
@@ -56,7 +56,7 @@ vim.o.ic = true
 vim.o.smartcase = true
 
 -- Keep signcolumn on by default
-vim.o.signcolumn = 'yes'
+vim.o.signcolumn = "yes"
 
 -- Decrease update time
 vim.o.updatetime = 350
@@ -66,16 +66,16 @@ vim.o.timeoutlen = 500
 
 -- Deactivate visual bell
 vim.o.visualbell = false
-vim.cmd [[set t_vb=]]
+vim.cmd([[set t_vb=]])
 vim.o.ttyfast = true
 
 -- highlight tabs and trailing spaces
 -- vim.cmd [[set list listchars=tab:→\ ,trail:·]]
 vim.o.list = true
-vim.opt.listchars = { tab = '→ ', trail = '·', nbsp = '␣' }
+vim.opt.listchars = { tab = "→ ", trail = "·", nbsp = "␣" }
 
 -- Preview substitutions live, as you type!
-vim.o.inccommand = 'split'
+vim.o.inccommand = "split"
 
 -- Show which line your cursor is on
 vim.o.cursorline = true
@@ -88,5 +88,12 @@ require("bitweise/remap")
 
 -- The the plugin manager Lazy
 require("bitweise/lazy")
+
+vim.cmd([[
+augroup jdtls_lsp
+    autocmd!
+    autocmd FileType java lua require'jdtls.jdtls_setup'.setup()
+augroup end
+]])
 
 -- vim: ts=2 sw=2 et

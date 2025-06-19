@@ -27,6 +27,8 @@ require("lazy").setup({
 	require("bitweise.plugins.conform"),
 	require("bitweise.plugins.todo-comments"),
 
+	{ "mfussenegger/nvim-jdtls" },
+
 	{ "nvim-treesitter/playground" },
 }, {
 	ui = {
