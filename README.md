@@ -1,4 +1,2 @@
-# Personal Basic Neomim Settting
+# Personal Neovim Settting
 
-This repository contains my personal Neovim settings, which are pretty basic for
-some people.
